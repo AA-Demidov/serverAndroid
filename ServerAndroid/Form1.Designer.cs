@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnStart = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -37,6 +38,16 @@
             this.lstStatus = new System.Windows.Forms.ListBox();
             this.btnScan = new System.Windows.Forms.Button();
             this.txtStatus = new System.Windows.Forms.TextBox();
+            this.lstData = new System.Windows.Forms.ListBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.lst2room = new System.Windows.Forms.ListBox();
+            this.lst1room = new System.Windows.Forms.ListBox();
+            this.lst3room = new System.Windows.Forms.ListBox();
+            this.lst4room = new System.Windows.Forms.ListBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnStart
@@ -96,16 +107,16 @@
             // lstStatus
             // 
             this.lstStatus.FormattingEnabled = true;
-            this.lstStatus.Location = new System.Drawing.Point(272, 63);
+            this.lstStatus.Location = new System.Drawing.Point(10, 310);
             this.lstStatus.Name = "lstStatus";
-            this.lstStatus.Size = new System.Drawing.Size(287, 147);
+            this.lstStatus.Size = new System.Drawing.Size(256, 147);
             this.lstStatus.TabIndex = 7;
             // 
             // btnScan
             // 
-            this.btnScan.Location = new System.Drawing.Point(10, 217);
+            this.btnScan.Location = new System.Drawing.Point(10, 245);
             this.btnScan.Name = "btnScan";
-            this.btnScan.Size = new System.Drawing.Size(188, 42);
+            this.btnScan.Size = new System.Drawing.Size(256, 42);
             this.btnScan.TabIndex = 8;
             this.btnScan.Text = "Определить местоположение";
             this.btnScan.UseVisualStyleBackColor = true;
@@ -113,17 +124,104 @@
             // 
             // txtStatus
             // 
-            this.txtStatus.Location = new System.Drawing.Point(10, 63);
+            this.txtStatus.Location = new System.Drawing.Point(10, 91);
             this.txtStatus.Multiline = true;
             this.txtStatus.Name = "txtStatus";
             this.txtStatus.Size = new System.Drawing.Size(256, 148);
             this.txtStatus.TabIndex = 10;
             // 
+            // lstData
+            // 
+            this.lstData.FormattingEnabled = true;
+            this.lstData.Location = new System.Drawing.Point(10, 476);
+            this.lstData.Name = "lstData";
+            this.lstData.Size = new System.Drawing.Size(256, 121);
+            this.lstData.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(9, 294);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(87, 13);
+            this.label3.TabIndex = 12;
+            this.label3.Text = "Вывод массива";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 73);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(103, 13);
+            this.label4.TabIndex = 13;
+            this.label4.Text = "Терминал сервера";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(9, 460);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(130, 13);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Служебная информация";
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.ErrorImage")));
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(272, 6);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(668, 665);
+            this.pictureBox1.TabIndex = 15;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // lst2room
+            // 
+            this.lst2room.FormattingEnabled = true;
+            this.lst2room.Location = new System.Drawing.Point(546, 348);
+            this.lst2room.Name = "lst2room";
+            this.lst2room.Size = new System.Drawing.Size(145, 199);
+            this.lst2room.TabIndex = 17;
+            // 
+            // lst1room
+            // 
+            this.lst1room.FormattingEnabled = true;
+            this.lst1room.Location = new System.Drawing.Point(314, 348);
+            this.lst1room.Name = "lst1room";
+            this.lst1room.Size = new System.Drawing.Size(145, 199);
+            this.lst1room.TabIndex = 18;
+            // 
+            // lst3room
+            // 
+            this.lst3room.FormattingEnabled = true;
+            this.lst3room.Location = new System.Drawing.Point(760, 348);
+            this.lst3room.Name = "lst3room";
+            this.lst3room.Size = new System.Drawing.Size(145, 199);
+            this.lst3room.TabIndex = 19;
+            // 
+            // lst4room
+            // 
+            this.lst4room.FormattingEnabled = true;
+            this.lst4room.Location = new System.Drawing.Point(760, 37);
+            this.lst4room.Name = "lst4room";
+            this.lst4room.Size = new System.Drawing.Size(145, 108);
+            this.lst4room.TabIndex = 20;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(564, 275);
+            this.ClientSize = new System.Drawing.Size(942, 678);
+            this.Controls.Add(this.lst4room);
+            this.Controls.Add(this.lst3room);
+            this.Controls.Add(this.lst1room);
+            this.Controls.Add(this.lst2room);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.lstData);
             this.Controls.Add(this.txtStatus);
             this.Controls.Add(this.btnScan);
             this.Controls.Add(this.lstStatus);
@@ -137,6 +235,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = " ServerAndroid";
             this.Load += new System.EventHandler(this.Form1_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,6 +252,15 @@
         private System.Windows.Forms.ListBox lstStatus;
         private System.Windows.Forms.Button btnScan;
         private System.Windows.Forms.TextBox txtStatus;
+        private System.Windows.Forms.ListBox lstData;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.ListBox lst2room;
+        private System.Windows.Forms.ListBox lst1room;
+        private System.Windows.Forms.ListBox lst3room;
+        private System.Windows.Forms.ListBox lst4room;
     }
 }
 
